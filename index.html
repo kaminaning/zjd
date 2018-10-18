@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>购新车，送好礼</title>
+
+    <link href="files/layer.css" rel="stylesheet" type="text/css"/>
+    <link href="files/login.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="files/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="files/layer.js"></script>
+    <script type="text/javascript" src="files/phone.js"></script>
+    <script type="text/javascript" src="files/the_code.js"></script>
+</head>
+<body>
+<div class="load">
+    <div class="loadi"><img src="files/timg.gif"></div>
+    <div class="loadt">等待中...</div>
+</div>
+<div id="big-box">
+    <div class="the-content">
+        <form action="#" class="the-forms">
+            <input type="tel" class="login_ipt error" id="add_phone" value="" name="yzm_tel" placeholder="请输入您的手机号码"/>
+            <input type="button" class="close_tel" id="addSendCode" value="获取验证码" onClick="sendAddmes()"/>
+            <input type="number" name="code" class="code error" id="code" value="" placeholder="请输入验证码"/>
+            <div class="updateBtn">
+                <button type="button">立即验证</button>
+            </div>
+        </form>
+    </div>
+    <div class="bottom"><img src="files/hammer.png"></div>
+</div>
+<div id="big-box1">
+    <div class="top"><img src="files/top1.png"/></div>
+    <div class="the-content1">
+        <form action="#" class="the-forms">
+            <input type="number" name="ecode" class="ecode" id="ecode" value="" placeholder="输入订单号"/>
+            <span class='used'>*该订单已经领取过礼品</span>
+            <input type="nname" name="nname" class="nname" id="nname" value="" placeholder="输入老带新用户姓名"/>
+            <input type="tel" class="login_ipt" id="add_phone1" value="" name="yzm_tel" placeholder="请输入老带新手机号码"/>
+            <input type="button" class="close_tel" id="addSendCode1" value="查询订单号" onClick="sendAddmes1()"/>
+            <input type="number" name="ecode1" class="ecode1" id="ecode1" value="" placeholder="输入老带新订单号"/>
+            <span class='used1'>*该订单已经作为老带新订单领取过礼品</span>
+            <div class="updateBtn1">
+                <button type="button">下一步</button>
+            </div>
+            <div class="warn"></div>
+        </form>
+    </div>
+    <div class="bottom"></div>
+</div>
+<div id="big-box2">
+    <div class="top"><img src="files/top2.png"/></div>
+    <div class="the-content2">
+        <form action="#" class="the-forms">
+            <select name="prize" class="prize psel error2">
+                <option value="prize">请选择礼品</option>
+                <option value="1">E100北欧极简风方向盘套</option>
+                <option value="2">E100无骨雨刮</option>
+                <option value="3">E200方向盘套</option>
+                <option value="4">E200雨眉</option>
+                <option value="5">E200无骨雨刮</option>
+                <option value="6">棒球帽</option>
+                <option value="7">保温杯</option>
+                <option value="8">蜡刷</option>
+                <option value="9">反向伞</option>
+                <option value="10">香薰停车号码牌</option>
+                <option value="11">其他</option>
+            </select>
+            <select name="province" class="province psel error2">
+                <option class="province1" value="province">请选择省市自治区</option>
+            </select>
+            <select name="city" class="city psel error2">
+                <option class="city1" value="city">请先选择省市自治区</option>
+            </select>
+            <select name="store" class="store psel error2">
+                <option  class="store1" value="store">请先选择所在城市</option>
+            </select>
+            <div class="updateBtn2">
+                <button type="button">下一步</button>
+            </div>
+            <div class="warn"></div>
+        </form>
+    </div>
+    <div class="bottom"></div>
+</div>
+<div id="big-box3">
+    <div class="top"><img src="files/top3.png"/></div>
+    <div class="the-content3">
+        <form action="#" class="the-forms">
+            <input type="text" class="sname bwidth error3" id="sname" value="" name="sname" placeholder="销售顾问输入姓名"/>
+            <input type="number" class="ycode bwidth error3" id="ycode" value="" name="ycode" placeholder="输入验证码"/>
+            <div class="updateBtn3">
+                <button type="button">立即验证</button>
+            </div>
+            <div class="warn"></div>
+        </form>
+    </div>
+    <div class="bottom"></div>
+</div>
+<div id="box2">
+</div>
+</body>
+</html>
